@@ -12,7 +12,7 @@ package Collection_Jan14;
 			ll.addFirst("Hello");
 			ll.add(0, 20);
 			ll.add(2,30);
-			//System.out.println(ll);
+			System.out.println(ll);
 			Iterator i1=ll.iterator();
 			while(i1.hasNext())
 			{
