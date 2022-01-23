@@ -1,4 +1,4 @@
-package Generic;
+package Generic_Jan22;
 
 public class GenericMethodTest {
 	
