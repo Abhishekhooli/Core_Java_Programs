@@ -1,5 +1,9 @@
 package Collection_Jan14;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class Iterator_Ex {
 
 	public static void main(String[] args) {
