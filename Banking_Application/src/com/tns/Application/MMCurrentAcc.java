@@ -3,6 +3,9 @@ package com.tns.Application;
 import com.tns.Framework.CurrentAcc;
 
 public class MMCurrentAcc extends CurrentAcc {
+	private float  withdrawal;
+
+
 	public MMCurrentAcc(int accNo, String accNm, float accBal,float creditLimit) {
 		super(accNo, accNm, accBal);
 		
@@ -11,7 +14,7 @@ public class MMCurrentAcc extends CurrentAcc {
 
 	public void withdraw(float creditLimit)
 	{
-		
+		super.withdraw( withdrawal);
 	}
 	
 

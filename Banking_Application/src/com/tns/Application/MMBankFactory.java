@@ -4,14 +4,14 @@ import com.tns.Framework.BankFactory;
 import com.tns.Framework.CurrentAcc;
 import com.tns.Framework.SavingAcc;
 
-public abstract class MMBankFactory extends BankFactory
+public  class MMBankFactory extends BankFactory
 {
 
-	public MMSavingAcc getNewSavingAccount(int AccNo,String accNm,float accBal, float	isSalaried) {
+	public SavingAcc getNewSavingAccount(int AccNo,String accNm,float accBal, boolean	isSalaried) {
 		return null;
 	}
-
-	public MMCurrentAcc getNewCurrentAccount(int AccNo,String accNm,float accBal,float creditLimit) {
+	
+	public CurrentAcc getNewCurrentAccount(int AccNo,String accNm,float accBal,float creditLimit) {
 		return null;
 	}
 	

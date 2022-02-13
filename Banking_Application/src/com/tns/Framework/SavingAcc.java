@@ -11,6 +11,11 @@ public abstract class SavingAcc extends BankAcc {
 		this.isSalary = isSalary;
 	}
 
+	public SavingAcc(int accNo, String accNm, float accBal, boolean isSalaray) {
+		super(accNo, accNm, accBal);
+		this.isSalary = isSalary;
+	}
+
 	public void withdraw(float isSalary)
 	{
 		
