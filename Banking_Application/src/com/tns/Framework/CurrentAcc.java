@@ -1,20 +1,31 @@
 package com.tns.Framework;
 
-public abstract class CurrentAcc extends BankAcc {
-	
+class creditLimit {
+	private creditLimit() {
 
-	public CurrentAcc(int accNo, String accNm, float accBal) {
-		super(accNo, accNm, accBal);
 	}
 
+	public final creditLimit obj = new creditLimit();
+}
 
+public abstract class CurrentAcc extends BankAcc {
+	private final float creditLimit;
 
-	private float creditLimit;
-	
-	
-	public void withdraw(float creditLimit)
-	{
-		
+	public static float getCreditLimit(float creditLimit) {
+
+		return creditLimit;
+
+	}
+
+	public CurrentAcc(int accNo, String accName, float accBal, float creditLimit) {
+		super(accNo, accName, accBal);
+		this.creditLimit = creditLimit;
+	}
+
+	@Override
+	public void withdraw(float withdrawal) {
+
+		super.withdraw(withdrawal);
 	}
 
 	

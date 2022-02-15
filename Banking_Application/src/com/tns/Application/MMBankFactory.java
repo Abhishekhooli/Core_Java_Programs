@@ -6,13 +6,18 @@ import com.tns.Framework.SavingAcc;
 
 public  class MMBankFactory extends BankFactory
 {
+	@Override
+	public SavingAcc getNewSavingAccount(int accNo, String accName, float accBal, boolean isSalaried) {
 
-	public SavingAcc getNewSavingAccount(int AccNo,String accNm,float accBal, boolean	isSalaried) {
 		return null;
 	}
-	
-	public CurrentAcc getNewCurrentAccount(int AccNo,String accNm,float accBal,float creditLimit) {
+
+	@Override
+	public CurrentAcc getNewCurrentAccount(int accNo, String accName, float accBal, float creditLimit) {
+
 		return null;
+	
+	
 	}
 	
 }

@@ -5,16 +5,17 @@ import com.tns.Framework.SavingAcc;
 public class MMSavingAcc extends SavingAcc{
 	
 	
-	public MMSavingAcc(int AccNo,String accNm,float accBal,boolean b)
+	public MMSavingAcc(int AccNo,String accNm,float accBal,boolean isSalaried)
 	{
-		super(AccNo, accNm, accBal, b);
+		super(AccNo, accNm, accBal, isSalaried);
 		
 	}
 	
 
-	public void withdraw(float  isSalary)
-	{
-		float withdrawal = 500;
+
+	@Override
+	public void withdraw(float withdrawal) {
+
 		super.withdraw(withdrawal);
 	}
 

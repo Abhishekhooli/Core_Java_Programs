@@ -7,14 +7,15 @@ public class MMCurrentAcc extends CurrentAcc {
 
 
 	public MMCurrentAcc(int accNo, String accNm, float accBal,float creditLimit) {
-		super(accNo, accNm, accBal);
+		super(accNo, accNm, accBal, creditLimit);
 		
 	}
 
 
-	public void withdraw(float creditLimit)
-	{
-		super.withdraw( withdrawal);
+	@Override
+	public void withdraw(float withdrawal) {
+
+		super.withdraw(withdrawal);
 	}
 	
 
